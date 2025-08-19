@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: rgb(21, 116, 179);
+
+        }
+
+        .navbar-brand {
+            font-size: 30px !important;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .heading-para {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .nav-link:hover {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+        .nav-link:active {
+            color: blue !important;
+        }
+
+        .pfp {
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .modal-p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        heading1 {
+            margin: 80px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(63, 63, 63);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .modal-p {
+            margin-left: 16px;
+        }
+
+        .rolex-span,
+        .titan-span,
+        .gshock-span {
+            color: red;
+        }
+
+        .container {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .heading-rolex,
+        .heading-gshock,
+        .heading-titan {
+            text-align: center;
+        }
+
+        .card {
+            /* display: grid; */
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+
+        }
+
+        .btn {
+            background-color: rgb(100, 97, 97) !important;
+            color: white !important;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30) !important;
+
+        }
+
+        .cardmain {
+            margin-top: 60px;
+        }
+
+        .map-heading,
+        .heading-client {
+            margin-top: 110px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(63, 63, 63);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .footer_content {
+            font-size: large;
+            text-align: center;
+            padding: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="logo" src="./logo.jpg" width="60px" height="50px" alt="" />
+
+            <a class="navbar-brand" href="index.html">style's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <strong>Home</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>About</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Contact Us</strong></a>
+                    </li>
+                </ul>
+                <!-- PFP that opens modal -->
+                <img class="pfp" src="./IMG-20250614-WA0009mee.jpg" alt="avanthika profile picture" width="40px"
+                    height="40px" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#pfpModal" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Picture Modal -->
+    <div class="modal fade" id="pfpModal" tabindex="-1" aria-labelledby="pfpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pfpModalLabel">AVANTHIKA SURESH</h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <p class="modal-p">Director of Avanthika suresh Executives</p>
+                <p class="modal-p">Email: avanthikasuresh8848@gmail.com</p>
+                <p class="modal-p">Git Hub: avanthika</p>
+                <p class="modal-p">Phone: 8848594982</p>
+
+                <div class="modal-body text-center">
+                    <img src="./IMG-20250614-WA0009mee.jpg" alt="Profile" class="img-fluid rounded" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADING BEFORE CARDS -->
+
+    <h1 class="heading1 text-capitalize">
+        collections of sneakers!
+    </h1>
+    <h3 class="heading-para text-capitalize">
+        our latest collections
+    </h3>
+
+    <!-- card area starts here -->
+    <div class="card-group container-sm">
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 15rem">
+            <img src="./addidass.jpeg" class="card-img-top" alt="adidas" />
+            <div class="card-body">
+                <h2 class="heading-adidas"><span class="adidas-span">A</span>DIDAS</h2>
+                <p class="card-text">
+                    Adidas running shoes generally received positive reviews for their advanced cushioning
+                    technologies,good grip,and durability.
+                    Adidas was founded by ADOLF"Adi"DASSLER in 1949.
+                </p>
+                <a href="https://www.adidas.co.in/shoes" class="btn btn-primary w-100">Click to visit</a>
+            </div>
+        </div>
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 15rem">
+            <img src="./nike.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h2 class="heading-nike">
+                    <span class="nike-span">N</span>IKE
+                </h2>
+                <p class="card-text">
+                    Nike, Inc.[note 1] (stylized as NIKE) is an American athletic footwear and apparel corporation
+                    headquartered near Beaverton, Oregon.[6] It is the world's largest supplier of athletic shoes and
+                    apparel and a major manufacturer of sports equipment, with revenue in excess of US$46 billion in its
+                    fiscal year 2022.[7][8]
+                </p>
+                <a href="https://www.nike.com/in/" class="btn btn-primary w-100">Click to visit</a>
+            </div>
+        </div>
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 15rem">
+            <img src="./puma.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h2 class="heading-puma"><span class="puma-span">P</span>UMA</h2>
+                <p class="card-text">
+                    Puma SE is a German multinational corporation which designs and manufactures athletic and casual
+                    footwear, apparel, and accessories, headquartered in Herzogenaurach, Bavaria, Germany. Puma is the
+                    third largest sportswear manufacturer in the world.[7]
+                </p>
+                <a href="https://in.puma.com/in/en" class="btn btn-primary w-100">Click to visit</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <br /><br /> -->
+    <h2 class="heading-client text-capitalize">
+        Our dearest trusted clients...
+    </h2>
+    <!-- carousel starts here -->
+    <div class="container-fluid cardmain">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ronaldo.jpg" class="d-block w-100" alt="ronaldo" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CRISTIANO RONALDO</h5>
+                        <p>"A global football icon, Ronaldo's partnership with Nike is amajor endorsement for the
+                            brand,."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./messi.jpg" class="d-block w-100" alt="messi" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LIONEL MESSI</h5>
+                        <p>"A globally recognized soccer superstar,messi is a key adidas athlet".</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./neymar.jpg" class="d-block w-100" alt="neymer" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NEYMER JR</h5>
+                        <p>
+                            " the braziliN football superstar is obne of puma's key football ambassadors".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAP STARTS HERE -->
+
+    <!-- <br /><br /><br />
+    <h3 class="map-heading text-capitalize">Locate us near your residence</h3>
+    <div class="container map">
+        <div class="ratio ratio-21x9">
+            <div class="embed-map-fixed">
+                <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                        href="https://map-embed.org"
+                        style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">google
+                        maps generator</a><a href="https://heygames.org"
+                        style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">HeyGames</a><a
+                        href="https://cartoongames.io"
+                        style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">Cartoon
+                        Games</a></div>
+                <style>
+                    .embed-map-fixed {
+                        position: relative;
+                        text-align: right;
+                        width: 600px;
+                        height: 400px;
+                    }
+
+                    .embed-map-container {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 600px;
+                        height: 400px;
+                    }
+
+                    .embed-map-frame {
+                        width: 600px !important;
+                        height: 400px !important;
+                    }
+                </style>
+            </div>
+        </div>
+        <br /><br /> -->
+        <!-- FOOTER CONTENTS -->
+        <div class="footer">
+            <p class="footer_content">
+                We are now recycling the wastes of our products. Click
+                <a href="https://youtu.be/73O81rxazoQ">here</a> to be a part.
+            </p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
